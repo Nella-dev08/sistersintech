@@ -51,7 +51,6 @@ header {
     z-index: 1000;
     position: fixed;
     width: 96%;
-    max-width: 500px;
 }
 
 .logo {
@@ -634,3 +633,4 @@ nav a:hover::after {
     background: #212121;
 
 }
+
