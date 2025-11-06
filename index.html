@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sisters in tech</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+
+        <!--PRELOADER-->
+
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+
+        <canvas id="particle-canvas"></canvas>
+
+        <header>
+            <div class="logo">Sisters in Tech</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#events">Events</a>
+                <a href="#partners">Partners</a>
+                <a href="#join" class="btn-primary">Join Us</a>
+            </nav>
+        </header>
+
+        <section class="hero" id="About">
+            <div class="hero-text">
+                <h1>Sisters in Tech: Tech skills, sisterhood, <span>real impact</span></h1>
+                <p>We connect aspiring and experienced women in tech through workshops, mentorship and community
+                    events
+                </p>
+                <div class="buttons">
+                    <button id="exploreBtn" class="btn-outline">Explore our programs</button>
+                    <button id="becomeBtn" class="btn-outline">Become one of us</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1400&auto=format&fit=crop"
+                    alt="Women in tech" />
+            </div>
+
+            <div class="about-sis">
+                <h2>About Sisters in Tech</h2>
+                <p>Sisters in Tech is a community-led initiative dedicated to increasing women's participation in
+                    technology. We run mentorship, training, and career programs for women of all levels.</p>
+            </div>
+
+            <div class="misssion-and-vision">
+                <h2>Our Mission & Vision</h2>
+                <div class="mission">
+                    <p>Our mission is to empower women in technology through education, mentorship, and community
+                        support.
+                        We envision a world
+                        where women thrive in tech careers and leadership roles. where women are equally represented
+                        in
+                        all
+                        tech fields.</p>
+                    <p>We are committed to creating a supportive environment that fosters growth, collaboration, and
+                        innovation among women in tech.</p>
+                </div>
+                <div class="vission">
+                    <p>Our vision is to create a world where women are empowered to pursue their passions in
+                        technology
+                        and
+                        achieve their career goals. </p>
+                </div>
+            </div>
+
+            <div class="members">
+
+            </div>
+        </section>
+
+        <section id="programs" class="content-section">
+            <h2>Programs & Tracks</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Frontend Foundations</h3>
+                    <p>HTML, CSS, & React basics. Build your first protfolio.</p>
+                </div>
+                <div class="card">
+                    <h3>Data Essentials</h3>
+                    <p>Python, SQL, data cleaning and visualization for real word projects</p>
+                </div>
+                <div class="card">
+                    <h3>Product & Design</h3>
+                    <p>UI/UX, Prototyping, ad product thinking for problem-solving</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="content-section">
+            <h2>Upcoming Events</h2>
+            <div class="cards">
+
+                <div class="card">
+                    <h3>AI for social Good</h3>
+                    <p>November 22, 2025 - Lagos, Nigeria</p>
+                </div>
+
+                <div class="card">
+                    <h3>Frontend Jam</h3>
+                    <p>December 10, 2025 - Virtual</p>
+                </div>
+
+                <div class="card">
+                    <h3>Career Clinic </h3>
+                    <P>Janurary 15, 2026 - Abuja</P>
+                </div>
+
+                <div class="card">
+                    <h3>Everthing Tech</h3>
+                    <p>April 14, 2026 - Virtual</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="Partners" class="content-section">
+            <h2>Our Partners</h2>
+            <div class="cards-partner">
+
+                <div class="card-partner">
+                    <h3>DELLASS</h3>
+                    <p>Technology Partners - Hardware & Sponsorship</p>
+                </div>
+
+                <div class="card-partner">
+                    <h3>ELLASS Enterprises</h3>
+                    <p>Educational enterprise
+                    <p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="join" class="join-section">
+            <h2>Join the Movement</h2>
+            <p>Sign up for our newsletter to get updates and events invites</p>
+
+            <form id="subscriptionForm" class="form-group">
+                <input type="email" id="email" placeholder="you@domain.com" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </section>
+
+        <!--Become one of us button(Initially hidden)-->
+        <div class="one-of-us" id="oneOfUs">
+            <h2>Select a category below</h2>
+            <div class="grid grid-3- mt-3">
+                <div class="category-card" data-category="mentor">
+                    <h3>Become a Mentor</h3>
+                </div>
+
+                <div class="category-card" data-category="sister">
+                    <h3>Become a Sister</h3>
+                </div>
+
+                <div class="category-card" data-category="partner">
+                    <h3>Become a partner</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Become a Mentor Form -->
+        <div class="form-page" id="mentorForm">
+            <h2>Become a Mentor ⚡</h2>
+            <p class="form-desc">Inspire, guide, and empower the next generation of tech ladies.</p>
+
+            <form id="mentorFormElement">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Area of Expertise" required>
+                <textarea placeholder="Share a short bio or experience summary" rows="5"></textarea>
+                <input type="url" placeholder="LinkedIn or Portfolio URL">
+                <button type="submit" class="btn-primary">Become a Mentor</button>
+            </form>
+        </div>
+
+
+        <!-- Become a Sister Form -->
+        <div class="form-page" id="sisterForm">
+            <h2>Become a Sister 💜</h2>
+            <p class="form-desc">Join a strong network of tech-loving ladies ready to grow together.</p>
+
+            <form id="sisterFormElement">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Tech Interest (e.g. Web Dev, Data, Design)" required>
+                <textarea placeholder="Why do you want to join the sisterhood?" rows="4"></textarea>
+                <button type="submit" class="btn-primary">Join the Sisterhood</button>
+            </form>
+        </div>
+
+
+        <!-- Become a Partner Form -->
+        <div class="form-page" id="partnerForm">
+            <h2>Become a Partner 🤝</h2>
+            <p class="form-desc">Let`s collaborate to impact women in tech across Africa and beyond.</p>
+
+            <form id="partnerFormElement">
+                <input type="text" placeholder="Organization Name" required>
+                <input type="text" placeholder="Contact Person Name" required>
+                <input type="email" placeholder="Official Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <textarea placeholder="How would you like to partner with us?" rows="5"></textarea>
+                <button type="submit" class="btn-primary">Partner With Us</button>
+            </form>
+        </div>
+
+
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+
+                <!--Left Section-->
+                <div class="footer-left">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                                alt="Instagram"></a>
+                    </div>
+
+                    <p class="copyright">©Sisters in Tech</p>
+                </div>
+
+                <!--Right Section-->
+                <div class="footer-right">
+                    <p>Sisters in tech is a growing provider of knowledge and oppurtunities to efficient
+                        women/sisters
+                        who are willing to be guided. Dedicated to helping transform and thrive in the digital age.
+                        We
+                        leverage cutting-edge technology and industry expertise to deliver tailored solutions that
+                        meet
+                        the unique needs of our clients. Our commitment to excellence and customer satisfaction
+                        drives
+                        us to continuously improve and adapt in this fast-paced environment. Learn more about Us on
+                        <a href="#">SistersinTech.com</a>.
+                    </p>
+                </div>
+
+                <!--Bottom Section-->
+                <div class="footer-bottom">
+                    <a href="#">Cookies</a> |
+                    <a href="#">Legal</a> |
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
