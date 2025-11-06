@@ -51,6 +51,7 @@ header {
     z-index: 1000;
     position: fixed;
     width: 96%;
+    max-width: 500px;
 }
 
 .logo {
@@ -631,4 +632,5 @@ nav a:hover::after {
 
 #partnerForm .btn-primary:hover {
     background: #212121;
+
 }
